@@ -1,0 +1,70 @@
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+
+.info p{
+    font-weight: 300;
+}
+
+h1{
+    color: #e21818;
+    font-weight: 400;
+}
+
+p{
+    color: rgb(77, 76, 76);
+}
+
+.box-action{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.select-scope{
+    background-color: #7a7a7a;
+    padding: 60px;
+}
+
+.info-verification{
+    background-color: #4d4d4d;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-verification p{
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.info-verification strong{
+    font-weight: 500;
+}
+
+.start-verification{
+    background-color: #303030;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.button-container button, p{
+    margin: 5px;
+}
+
+.select-scope p {
+    color: white;
+}

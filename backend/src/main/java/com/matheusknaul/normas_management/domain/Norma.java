@@ -4,6 +4,9 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
@@ -19,7 +22,9 @@ public class Norma {
 	private String number;
 	private String description;
 	
+	@JsonFormat(pattern = "dd/MM/yyyy")
 	private LocalDate verificationDate = LocalDate.now();
+	@JsonFormat(pattern = "dd/MM/yyyy")
 	private LocalDate versionDate;
 	
 	@ManyToOne
