@@ -6,17 +6,20 @@
     margin: 40px;
 }
 
+h1{
+    color: #51c774;
+    font-weight: 400;
+    font-size: 40px;
+}
+
 .info p{
+    color: rgb(77, 76, 76);
     font-weight: 300;
 }
 
-h1{
-    color: #e21818;
-    font-weight: 400;
-}
-
-p{
-    color: rgb(77, 76, 76);
+.btn-choose-file i,
+.btn-choose-manual i{
+    margin-right: 10px;
 }
 
 .box-action{
@@ -26,12 +29,13 @@ p{
 }
 
 .select-scope{
-    background-color: #7a7a7a;
+    background-color: white;
+    background-image: radial-gradient(circle, #51c774 1px, transparent 1px);
+    background-size: 15px 15px;
     padding: 60px;
 }
 
 .info-verification{
-    background-color: #4d4d4d;
     padding: 40px;
     display: flex;
     align-items: center;
@@ -39,17 +43,12 @@ p{
 }
 
 .info-verification p{
-    font-weight: 300;
-    font-size: 20px;
-}
-
-.info-verification strong{
+    color: #111827;
     font-weight: 500;
+    font-size: 40px;
 }
 
 .start-verification{
-    background-color: #303030;
-    padding: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -59,12 +58,28 @@ p{
 .button-container{
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .button-container button, p{
     margin: 5px;
 }
 
-.select-scope p {
-    color: white;
+.button-container button p{
+    color: #111827;
+}
+
+.warning{
+    margin: 10px;
+    color: #111827;
+    font-size: 14px;
+}
+
+a{
+    color: #111827;
+    font-weight: 500;
+}
+
+a:hover{
+    color: #51c774;
 }

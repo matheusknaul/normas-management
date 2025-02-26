@@ -1,0 +1,24 @@
+.tape{
+    padding: 5px;
+    width: 100%;
+    background-color: #51c774;
+}
+
+ul{
+    color: #174d27;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    font-size: 14px;
+    margin-left: 40px;
+}
+
+li{
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+li:hover{
+    color: #05140a;
+}

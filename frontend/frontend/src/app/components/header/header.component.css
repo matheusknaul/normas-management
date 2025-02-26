@@ -1,3 +1,47 @@
 header{
     border-bottom: 2px solid rgb(241, 240, 240);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 30px;
+    font-size: 14px;
+}
+
+.general-menu ul,
+.personal-menu ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 40px;
+}
+
+.logo, li{
+    cursor: pointer;
+}
+
+li{
+    padding: 10px;
+}
+
+.personal-menu li{
+    transition: 0.2s;
+}
+
+.login:hover{
+    color: #51c774;
+}
+
+.archives:hover{
+    color: #51c774;
+}
+
+.sign-up{
+    color: #51c774;
+    border: 1px solid #51c774;
+    transition: 0.2s;
+}
+
+.sign-up:hover{
+    color: white;
+    background-color: #51c774;
 }
