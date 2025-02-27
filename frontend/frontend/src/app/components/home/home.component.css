@@ -140,3 +140,25 @@ h3{
 .home-container{
     flex: 1 1 0;
 }
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    background-color: #51c774;
+    background-image: radial-gradient(circle, white 1px, transparent 1px);
+    background-size: 15px 15px;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 20px;
+    color: white;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+.btn-cta{
+    border: solid 2px white;
+    box-shadow: none;
+}
