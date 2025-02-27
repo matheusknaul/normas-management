@@ -1,1 +1,32 @@
-<p>grupo-modal works!</p>
+<div class="modal-overlay">
+    <div class="modal-content">
+        <div class="header-modal">
+            
+        </div>
+        <div class="title">
+            <h2>Criar novo grupo de normas</h2>
+            <p>Vamos começar, criando um grupo para colocar suas normas! Assim tudo fica mais organizado!</p>
+            <div class="rectangle"></div>
+        </div>
+        <div class="form">
+            <form action="/api/grupos" method="post">
+                <div class="input-form">
+                    <label for="nome-responsavel">Nome do Responsável:</label>
+                    <input type="text" id="nome" placeholder="Nome do responsável que cuidará dessas normas" />
+                </div>
+                <div class="input-form">
+                    <label for="titulo">Título:</label>
+                    <input type="text" id="titulo" placeholder="Título do grupo"/>
+                </div>
+                <div class="input-form">
+                    <label for="descricao">Descrição:</label>
+                    <input type="text" id="descricao" placeholder="Ex: Normas de ensaios elétricos" />
+                </div>
+                <div class="submit">
+                    <button (click)="onClose()" class="btn btn-close" ><i class="fa-solid fa-arrow-left-long"></i>Sair</button>
+                    <button class="btn btn-form" type="submit">Cadastrar Grupo</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

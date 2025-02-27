@@ -15,7 +15,12 @@
                             <div class="button-container">
                                 <button class="btn btn-choose-file"><i class="fa-solid fa-inbox"></i>Selecionar Escopo PDF</button>
                                 <p>ou</p>
-                                <button class="btn btn-choose-manual"><i class="fa-solid fa-arrow-up-from-bracket"></i>Adicionar Manualmente</button>
+                                <button class="btn btn-choose-manual" (click)="openModal()"><i class="fa-solid fa-arrow-up-from-bracket"></i>Adicionar Manualmente</button>
+
+                                @if(isModalOpen){
+                                    <app-grupo-modal (close)=closeModal()></app-grupo-modal>
+                                }
+
                             </div>
                             <div class="warning">
                                 <p>Arraste um PDF ou arquivo TXT aqui. Tamanho máximo permitido 10MB ou <a href="">Cadastrar-se</a></p>
