@@ -22,6 +22,9 @@ public class Norma {
 	private String number;
 	private String description;
 	
+	private boolean isNational;
+	private String linkAddres;
+	
 	@JsonFormat(pattern = "dd/MM/yyyy")
 	private LocalDate verificationDate = LocalDate.now();
 	@JsonFormat(pattern = "dd/MM/yyyy")
@@ -78,6 +81,24 @@ public class Norma {
 
 	public void setDescription(String description) {
 		this.description = description;
+	}
+
+	public boolean isNational() {
+		return isNational;
+	}
+
+	public void setNational() {
+		if(this.tag == "ABNT") {
+			this.isNational = true;
+		}
+	}
+
+	public String getLinkAddres() {
+		return linkAddres;
+	}
+
+	public void setLinkAddres(String linkAddres) {
+		this.linkAddres = linkAddres;
 	}
 
 	public LocalDate getVerificationDate() {
