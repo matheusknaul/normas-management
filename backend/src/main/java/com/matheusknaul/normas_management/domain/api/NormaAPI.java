@@ -4,6 +4,8 @@ import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -14,10 +16,11 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 public class NormaAPI {
 	
 	private static final int ArrayList = 0;
-	private final String responseBody;
+	private final ArrayList<String> responseBody;
 
-	public NormaAPI(String query, boolean isNational) {
-		this.responseBody = fetchNorma(query, isNational);
+	public NormaAPI(String query, boolean isNational) throws JsonMappingException, JsonProcessingException {
+		String json = fetchNorma(query, isNational);
+		this.responseBody = parseJson(json);
 	}
 		
 	private String fetchNorma(String query, boolean isNational) {
@@ -63,8 +66,10 @@ public class NormaAPI {
 				String number = item.get("number").asText();
 				String title = item.get("title").asText();
 				
+				String formattedDate = formatDate(date);
+				
 				jsonResult.add(link);
-				jsonResult.add(date);
+				jsonResult.add(formattedDate);
 				jsonResult.add(number);
 				jsonResult.add(title);
 			}
@@ -73,8 +78,16 @@ public class NormaAPI {
 		
 	}
 	
+	private String formatDate(String date) {
+		DateTimeFormatter inputFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+		DateTimeFormatter outputFormatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+		
+		LocalDate localDate = LocalDate.parse(date, inputFormatter);
+		return localDate.format(outputFormatter);
+		
+	}
 
-	public String getResponseBody() {
+	public ArrayList<String> getResponseBody() {
 		return this.responseBody;
 	}
 	

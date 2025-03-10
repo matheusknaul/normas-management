@@ -47,6 +47,8 @@ public class Norma {
 		this.verificationDate = verificationDate;
 		this.versionDate = versionDate;
 		this.grupo = grupo;
+		
+		this.setNational();
 	}
 
 	public Integer getId() {
