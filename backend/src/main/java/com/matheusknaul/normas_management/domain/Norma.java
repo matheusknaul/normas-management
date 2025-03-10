@@ -47,8 +47,6 @@ public class Norma {
 		this.verificationDate = verificationDate;
 		this.versionDate = versionDate;
 		this.grupo = grupo;
-		
-		this.setNational();
 	}
 
 	public Integer getId() {
@@ -88,7 +86,7 @@ public class Norma {
 	}
 
 	public void setNational() {
-		if(this.tag == "ABNT") {
+		if(getTag().equals("ABNT")) {
 			this.isNational = true;
 		}
 	}

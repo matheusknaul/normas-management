@@ -23,7 +23,12 @@ public class NormaScrapeService {
 	public boolean verifyDate(Integer id) throws JsonMappingException, JsonProcessingException {
 		Norma normaVerify = normaService.searchById(id);
 		
-		NormaAPI normaApi = new NormaAPI(normaVerify.getNumber(), normaVerify.isNational());
+		normaVerify.setNational();
+		boolean local = normaVerify.isNational();
+		
+		System.out.println("Local:" + local);
+		
+		NormaAPI normaApi = new NormaAPI(normaVerify.getNumber(), local);
 		ArrayList<String> result = normaApi.getResponseBody();
 		
 		String dateString = result.get(1);

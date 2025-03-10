@@ -41,6 +41,8 @@ public class NormaAPI {
 	}
 	
 	private int verifyLocal(boolean isNational) {
+		
+		System.out.println(isNational);
 		if(isNational) {
 			return 1;
 		}
@@ -48,7 +50,9 @@ public class NormaAPI {
 	}
 	
 	private String makeUrl(String query, int option) {
-		return "https://admabnt.com.br/backend/api/v1/abntonline/search_360?search=" + query + "&options[]=" + option + "&scale=2";
+		String url = "https://admabnt.com.br/backend/api/v1/abntonline/search_360?search=" + query + "&options[]=" + option + "&scale=2";
+		System.out.println(url);
+		return url;
 	}
 	
 	private ArrayList<String> parseJson(String json) throws JsonMappingException, JsonProcessingException {
