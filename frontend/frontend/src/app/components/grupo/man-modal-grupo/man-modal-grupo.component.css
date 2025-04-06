@@ -1,0 +1,35 @@
+.main-container{
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    max-width: 1920px;
+}
+
+.menu-bar{
+    background-color: #121c2c;
+    color: #e0e0e0;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-card-grupos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    
+}
+
+.list-container{
+    margin: 20px;
+}
+
+ul{
+    list-style: none;
+}
+
+.card{
+    margin: 20px;
+    padding: 0;
+}
