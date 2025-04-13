@@ -1,38 +1,67 @@
 <div class="main-container">
     <nav class="sidebar">
         <div class="menu-button">
-            <i class="fa-solid fa-bars"></i>
+            <div class="icon"><i class="fa-solid fa-house"></i></div>
+            <div class="icon"><i class="fa-solid fa-bars"></i></div>
+            <div class="icon"><i class="fa-regular fa-moon"></i></div>
+            <div class="icon"><i class="fa-regular fa-sun"></i></div>
+            <div class="icon"><i class="fa-solid fa-arrow-right-from-bracket"></i></div>
         </div>
     </nav>
 
     <div class="window-container">
+        <div class="info-group">
+            <div class="title">
+                <h2>Normas Elétricas</h2>
+            </div>
+            <div class="responsavel">
+                <p>Matheus Henrique Knaul Calvet</p>
+            </div>
+            <div class="description">
+                <p>Normas de ensaios elétricos Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut consequuntur molestiae impedit ratione excepturi consectetur itaque officiis quos libero in ducimus veritatis ab perferendis deleniti nam, alias qui odio maxime!</p>
+            </div>
+            <div class="man-group">
+                <button class="btn-cult">Gerenciar grupo</button>
+            </div>
+        </div>
         <div class="man-normas">
             <div class="add-norma">
-                <button>Adicionar Norma</button>
+                <button class="btn-cult">Adicionar Norma</button>
             </div>
             <div class="import">
-                <button>Importar</button>
+                <button class="btn-cult">Importar</button>
             </div>
             <div class="search-container">
                 <label for="search"></label>
                 <input type="text" placeholder="Pesquisar norma">
             </div>
         </div>
-        <div class="list-normas-container">
-            <ul>
-                <li><div class="norma-container">
-                    <app-norma [tag]="'ABNT NBR ISO/IEC'" [number]="'17025:2017'" [description]="'Requisitos para sistema de gestão de laboratórios'" [status]="'Conforme'"></app-norma>
-                </div></li>
-                <li><div class="norma-container">
-                    <app-norma [tag]="'ABNT NBR ISO/IEC'" [number]="'17025:2017'" [description]="'Requisitos para sistema de gestão de laboratórios'" [status]="'Conforme'"></app-norma>
-                </div></li>
-                <li><div class="norma-container">
-                    <app-norma [tag]="'ABNT NBR ISO/IEC'" [number]="'17025:2017'" [description]="'Requisitos para sistema de gestão de laboratórios'" [status]="'Conforme'"></app-norma>
-                </div></li>
-                <li><div class="norma-container">
-                    <app-norma [tag]="'ABNT NBR ISO/IEC'" [number]="'17025:2017'" [description]="'Requisitos para sistema de gestão de laboratórios'" [status]="'Conforme'"></app-norma>
-                </div></li>
-            </ul>
+
+        <div class="table-container">
+            <table class="modern-table">
+                <thead>
+                    <tr>
+                        <th>Norma</th>
+                        <th>Descrição</th>
+                        <th>Status</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ABNT NBR ISO/IEC 17025</td>
+                        <td>Requisitos para gestão de laboratório</td>
+                        <td class="status conforme">Conforme</td>
+                        <td><button class="btn-action">Acessar</button></td>
+                    </tr>
+                    <tr>
+                        <td>NR-10</td>
+                        <td>Segurança em instalações elétricas</td>
+                        <td class="status nao-conforme">Não conforme</td>
+                        <td><button class="btn-action">Acessar</button></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </div>
