@@ -1,8 +1,9 @@
 .main-container {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
     align-items: center;
+    background-color: #151A22;
 }
 
 /* Sidebar (vertical) */
@@ -43,9 +44,10 @@
 
 .menu-bar {
     width: 150vh;
-    background-color: #1e1e1e;
+    background-color: #151A22;
     padding: 10px 20px;
     color: white;
+    border: 1px solid #737E85;
     border-radius: 20px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     display: flex;
@@ -71,7 +73,7 @@
   }
   
   .icon:hover {
-    background-color: #444444;
+    background-color: #242d3b;
   }
 
 /* General */
@@ -97,35 +99,42 @@
 .info-group{
     margin: 10px;
     padding: 20px;
-    border: 1px solid #dbdbdb;
+    border: 1px solid #737E85;
     border-radius: 5px;
 }
 
 .title h2{
     font-weight: 500;
-    color: #1e1e1e;
+    color: #D9E5EC;
 }
 
 .responsavel p{
     margin-top: 5px;
-    color: #2b2b2b;
+    color: #D9E5EC;
     font-size: 14px;
 }
 
 .description p{
     margin-top: 10px;
     margin-bottom: 15px;
-    color: #636262;
+    color: #737E85;
     font-size: 12px;
 }
 
 .estatisticas{
     font-size: 14px;
     margin-bottom: 20px;
+    color: #b2bbc0;
 }
 
 .estatisticas i{
     margin-right: 5px;
+}
+
+.btn-cult{
+    background-color: #283039;
+    border: 1px solid #3E4955;
+    color: #D9E5EC;
 }
 /* Gerenciamento Container */
 
@@ -137,7 +146,7 @@
     gap: 1rem;
     flex-wrap: wrap;
     padding: 1rem;
-    background-color: #1e1e1e;
+    background-color: #29313C;
     border-radius: 16px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
     position: relative;
@@ -151,22 +160,24 @@
 }
 
 .btnn {
-    background-color: #2d2d2d;
-    color: #fff;
+    background-color: #252A34;
+    color: #D9E5EC;
     border: none;
     padding: 0.6rem 1.2rem;
     cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
     transition: background 0.3s ease;
 }
 
 .btnn:hover {
-    background-color: #3c3c3c;
+    background-color: #323947;
 }
 
 .search-bar {
     position: relative;
     max-width: 300px;
     width: 100%;
+
 }
 
 .search-bar i {
@@ -174,22 +185,22 @@
     left: 12px;
     top: 50%;
     transform: translateY(-50%);
-    color: #aaa;
+    color: #909ea7;
 }
 
 .search-bar input {
     width: 100%;
     padding: 0.6rem 0.6rem 0.6rem 2.5rem;
     border-radius: 8px;
-    border: 1px solid #333;
-    background-color: #2a2a2a;
-    color: #fff;
+    border: 1px solid #3E4955;
+    background-color: #252A34;
+    color: #909ea7;
     transition: border-color 0.3s ease;
 }
 
 .search-bar input:focus {
     outline: none;
-    border-color: #555;
+    border-color: #536272;
 }
 
 /* Table Normas Container */
@@ -202,20 +213,20 @@
     margin-top: 1rem;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    background-color: #fff;
+    background-color: #151A22;
 }
 
 .modern-table {
     width: 100%;
     border-collapse: collapse;
-    color: #333;
+    color: #D9E5EC;
     font-family: 'Segoe UI', sans-serif;
     border-radius: 12px;
     overflow: hidden;
 }
 
 .modern-table thead {
-    background-color: #f5f5f5;
+    background-color: #29313C;
 }
 
 .modern-table th,
@@ -226,7 +237,7 @@
 }
 
 .modern-table tbody tr:hover {
-    background-color: #f0f0f0;
+    background-color: #222a36;
     cursor: pointer;
 }
 
@@ -276,8 +287,8 @@
 } */
 
 .btn-action {
-    background-color: #e0e0e0;
-    color: #333;
+    background-color: #252A34;
+    color: #D9E5EC;
     border: none;
     padding: 0.5rem 1rem;
     cursor: pointer;
@@ -286,6 +297,7 @@
 
 .btn-action:hover {
     background-color: #d5d5d5;
+    color: #252A34;
 }
 
 /* Linha selecionada */
