@@ -44,12 +44,12 @@
 
 .menu-bar {
     width: 150vh;
-    background-color: #151A22;
+    background-color: #29313C;
     padding: 10px 20px;
-    color: white;
+    color: #D9E5EC;
     border: 1px solid #737E85;
     border-radius: 20px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 10px rgba(175, 176, 250, 0.1);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -255,6 +255,7 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    background-color: #29313C;
   }
   
   .pagination-controls button {
