@@ -13,7 +13,7 @@ Projeto para verificação de normas técnicas
 
 ### 1.0 Endpoints:
 
-- (POST) /api/normas: 
+- 1.1 (POST) /api/normas: 
 
 ```json
 {
@@ -33,6 +33,6 @@ Projeto para verificação de normas técnicas
 
 Criação de norma.
 
-- (GET) /api/normas:
+- 1.2 (GET) /api/normas:
 
 Retorna todas as normas cadastradas
