@@ -16,6 +16,8 @@ Projeto para verificação de normas técnicas
 
 ### 1.0 Endpoints:
 
+---
+
 #### 1.1 Normas
 
 ##### 1.1.1 Criação de normas
@@ -50,3 +52,20 @@ Retorna todas as normas cadastradas.
  (GET) /api/normas/{id}: 
 
  Retorna a norma especificada pelo o "id".
+
+ ---
+
+#### 1.2 Grupos
+
+##### 1.2.1 Criação de normas
+
+
+ ---
+
+#### 1.3 Scrape
+
+##### 1.3.1 Verificando a versão da norma
+
+(GET) /scrape/{id} 
+
+Retorna true se caso a versão for a mesma, false se estiver desatualizada.
