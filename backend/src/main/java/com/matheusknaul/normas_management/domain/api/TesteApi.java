@@ -13,7 +13,7 @@ public class TesteApi {
 
             // Criando a requisição GET
             HttpRequest request = HttpRequest.newBuilder()
-                    .uri(URI.create("https://admabnt.com.br/backend/api/v1/abntonline/search_360?search=5537&options[]=1&scale=2"))
+                    .uri(URI.create("https://admabnt.com.br/backend/api/v1/abntonline/search_360?search=17025&options[]=1&scale=2"))
                     .GET()
                     .build();
 
