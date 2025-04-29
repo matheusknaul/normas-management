@@ -10,7 +10,7 @@ Projeto para verificação de normas técnicas
 
 ## API
 
-1. Endpoints:
+### 1.0 Endpoints:
 
 - (POST) /api/normas: 
 
