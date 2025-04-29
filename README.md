@@ -4,7 +4,8 @@ Projeto para verificação de normas técnicas
 
 ## Índice
 
-- [API] (#api)
+- [API] (#-api)
+
 
 ---
 
@@ -28,3 +29,10 @@ Projeto para verificação de normas técnicas
         "description":"aaaaaaaaaaaaaaaaa"
     }
 }
+```
+
+Criação de norma.
+
+- (GET) /api/normas:
+
+Retorna todas as normas cadastradas
