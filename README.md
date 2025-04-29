@@ -1,11 +1,14 @@
-# Normas management
+# Normas Management
 
 Projeto para verificação de normas técnicas
 
 ## Índice
 
-- [API] (#-api)
-
+- [API](#api)
+  - [Normas](#11-normas)
+    - [Criação de normas](#111-criação-de-normas)
+    - [Visualização de normas cadastradas](#112-visualização-de-normas-cadastradas)
+    - [Visualização de uma norma específica](#113-visualização-de-uma-norma-específica)
 
 ---
 
@@ -13,26 +16,27 @@ Projeto para verificação de normas técnicas
 
 ### 1.0 Endpoints:
 
-- #### 1.1 Normas 
+#### 1.1 Normas
 
-- ##### 1.1.1 Criação de normas
+##### 1.1.1 Criação de normas
 
-(POST) /api/normas: 
+(POST) `/api/normas`:
 
 ```json
 {
-    "id":3,
-    "tag":"ABNT",
-    "number":"5537",
-    "description":"Gestão de qualidade para laboratórios",
+    "id": 3,
+    "tag": "ABNT",
+    "number": "5537",
+    "description": "Gestão de qualidade para laboratórios",
     "verificationDate": "10/01/2021",
-    "versionDate":"28/02/2002",
+    "versionDate": "28/02/2002",
     "grupo": {
-        "id":2,
-        "title":"rapid",
-        "description":"aaaaaaaaaaaaaaaaa"
+        "id": 2,
+        "title": "rapid",
+        "description": "aaaaaaaaaaaaaaaaa"
     }
 }
+
 ```
 
 - ##### 1.1.2 Visualização de normas cadastradas
