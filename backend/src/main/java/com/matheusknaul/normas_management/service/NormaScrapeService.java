@@ -3,6 +3,7 @@ package com.matheusknaul.normas_management.service;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.List;
 
 import org.springframework.stereotype.Service;
 
@@ -10,6 +11,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.matheusknaul.normas_management.domain.Norma;
 import com.matheusknaul.normas_management.domain.api.NormaAPI;
+import com.matheusknaul.normas_management.verification.VersionVerification;
 
 @Service
 public class NormaScrapeService {
@@ -45,5 +47,11 @@ public class NormaScrapeService {
 		
 		System.out.println("Não é igual!");
 		return false;
+	}
+	
+	public List<Norma> testVerification(){
+		VersionVerification vv = new VersionVerification(this.normaService);
+		
+		return vv.test();
 	}
 }
