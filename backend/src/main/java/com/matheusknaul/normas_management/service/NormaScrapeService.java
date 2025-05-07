@@ -33,12 +33,14 @@ public class NormaScrapeService {
 		NormaAPI normaApi = new NormaAPI(normaVerify.getNumber(), local);
 		ArrayList<String> result = normaApi.getResponseBody();
 		
-		String dateString = result.get(1);
+		String dateString = result.get(1); //Pega a data da lista que o método parseJson retorna.
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 		LocalDate resultDate = LocalDate.parse(dateString, formatter);
 		
 		System.out.println(result);
 		System.out.println("Data norma (minha): " + normaVerify.getVersionDate() + "| Data norma (deles):" + resultDate);
+		
+		//Compara as duas datas (cadastrada / data da norma na sua versão mais recente)
 		
 		if(resultDate.equals(normaVerify.getVersionDate())) {
 			System.out.println("É igual!");
