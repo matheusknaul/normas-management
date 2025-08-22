@@ -29,13 +29,13 @@ Projeto para verificação de normas técnicas
     "id": 3,
     "tag": "ABNT",
     "number": "5537",
-    "description": "Gestão de qualidade para laboratórios",
+    "description": "Veículos rodoviários automotores - Guarnição do freio - Verificação da resistência ao cisalhamento entre a guarnição e o suporte metálico para pastilhas de freios a disco e sapatas de freios a tambor ",
     "verificationDate": "10/01/2021",
     "versionDate": "28/02/2002",
     "grupo": {
         "id": 2,
-        "title": "rapid",
-        "description": "aaaaaaaaaaaaaaaaa"
+        "title": "Escopo de veículos",
+        "description": "Normas que constituem o escopo de veículos"
     }
 }
 
